@@ -20,8 +20,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     // Ex4
-    document.getElementsByTagName("input")[3].addEventListener('click', function () {
-        const primerImg = document.querySelector('span > img:first-child');
-        primerImg.src = "star_on.gif";
+    const boto4 = document.getElementsByTagName("input")[4];
+    boto4.addEventListener('click', () => {
+        const estrelles = document.getElementsByTagName('img');
+        const primera = estrelles[0];
+        primera.src = 'star_on.gif';
     });
+
 });
