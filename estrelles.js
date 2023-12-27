@@ -20,11 +20,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     // Ex4
-    const boto4 = document.getElementsByTagName("input")[4];
-    boto4.addEventListener('click', () => {
-        const estrelles = document.getElementsByTagName('img');
-        const primera = estrelles[0];
-        primera.src = 'star_on.gif';
+    document.getElementsByTagName("input")[3].addEventListener('click', function () {
+        const terceraImatge = document.getElementById('ultima');
+        
     });
 
 });
