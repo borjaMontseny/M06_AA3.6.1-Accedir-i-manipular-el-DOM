@@ -1,6 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
+
     // Ex1
     document.getElementsByTagName("input")[0].addEventListener('click', function () {
         document.getElementById('star').src = "star_on.gif";
@@ -20,9 +21,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     // Ex4
-    document.getElementsByTagName("input")[3].addEventListener('click', function () {
-        const terceraImatge = document.getElementById('ultima');
-        
+    let botonCuatro = document.querySelector("#star ~ input[type='button']:nth-of-type(4)");
+    let imgEjer4 = document.querySelector("#star ~ span:nth-of-type(3) img:nth-of-type(1)");
+
+    botonCuatro.addEventListener('click', function () {
+        imgEjer4.src = "star_on.gif";
     });
 
 });
