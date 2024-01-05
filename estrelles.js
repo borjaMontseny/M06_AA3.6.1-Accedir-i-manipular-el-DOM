@@ -60,5 +60,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         spanDesti.appendChild(imgEx8);
     });
 
+    // Ex9
+    let boto9 = document.querySelector("#star ~ input[type='button']:nth-of-type(9)");
+    let spanEx9 = document.getElementById('sky');
+    let elementImg = document.createElement('img')
+    elementImg.src = "star_on.gif";
+
+    boto9.addEventListener('click', function () {
+        spanEx9.appendChild(elementImg);
+    });
 
 });
